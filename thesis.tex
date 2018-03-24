@@ -15,17 +15,17 @@
 \renewcommand{\cftchappagefont}{}
 \renewcommand{\cftdot}{}
 
-\newcommand{\thesistitle}{This is a title}
-\newcommand{\thesisauthor}{Who Am I}
-\newcommand{\programname}{Bioengineering Graduate Program}
-\newcommand{\departmentname}{Division of Biomedical Engineering, HKUST}
-\newcommand{\thesisdate}{May 2017}
-\newcommand{\signdate}{May 2017}
-\newcommand{\thesisdegree}{PhD}
-\newcommand{\dedicate}{\textit{To Somebogy}}
-\newcommand{\supervisorinfo}{Prof. ONE, Thesis Supervisor \\ Department of Electronic and Computer Engineering}
-\newcommand{\cosupervisorinfo}{Prof. TWO, Thesis Co-Supervisor \\ Department of Electronic and Computer Engineering}
-\newcommand{\depheadinfo}{Prof. BIG \\ Program Director, Bioengineering Graduate Program \\ Head, Division of Biomedical Engineering}
+\newcommand{\thesistitle}{Flow Scheduling for Parallel Computing Applications in Datacenters}
+\newcommand{\thesisauthor}{Li Chen}
+\newcommand{\programname}{Computer Science and Engineering}
+\newcommand{\departmentname}{Department of Computer Science and Engineering, HKUST}
+\newcommand{\thesisdate}{April 2018}
+\newcommand{\signdate}{April 2018}
+\newcommand{\thesisdegree}{Ph.D.}
+\newcommand{\dedicate}{}
+%\newcommand{\dedicate}{\textit{To Somebogy}}
+\newcommand{\supervisorinfo}{Prof. Kai Chen, Thesis Supervisor \\ Department of Computer Science and Engineering}
+\newcommand{\depheadinfo}{Prof. Dit-Yan Yeung \\ Department of Computer Science and Engineering}
 
 
 \begin{document}
@@ -34,22 +34,22 @@
 \pagestyle{plain}
 \setcounter{page}{1}
 \addcontentsline{toc}{chapter}{Title Page}
-\include{1_title}
+\include{format/1_title}
 
 \newpage
 \addcontentsline{toc}{chapter}{Authorization Page}
-\include{2_authorization}
+\include{format/2_authorization}
 
 \newpage
 \addcontentsline{toc}{chapter}{Signature Page}
-\include{3_signature}
+\include{format/3_signature}
 
 \newpage
-\include{4_dedicate}
+\include{format/4_dedicate}
 
 \newpage
 \addcontentsline{toc}{chapter}{Acknowledgments}
-\include{5_acknowledgement}
+\include{format/5_acknowledgement}
 
 \newpage
 \addcontentsline{toc}{chapter}{Table of Contents}
@@ -65,7 +65,7 @@
 
 \newpage
 \addcontentsline{toc}{chapter}{Abstract}
-\include{abstract}
+\include{content/abstract}
 
 \newpage
 \addcontentsline{toc}{chapter}{Abbreviations}
@@ -75,12 +75,7 @@
 \pagenumbering{arabic}
 \pagestyle{plain}
 \setcounter{page}{1}
-\include{chapter1}
-\include{chapter2}
-\include{chapter3}
-\include{chapter4}
-\include{chapter5}
-\include{chapter6}
+\include{content/intro}
 
 \newpage
 \addcontentsline{toc}{chapter}{Reference}
@@ -89,11 +84,11 @@
 
 \newpage
 \addcontentsline{toc}{chapter}{Publication}
-\include{publication}
+\include{format/publication}
 
 \newpage
 \addcontentsline{toc}{chapter}{Appendix}
 \appendix
-\include{appendix1}
+\include{content/appendix}
 
 \end{document}
